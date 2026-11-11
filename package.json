@@ -1,0 +1,42 @@
+{
+  "name": "dsh-tz-switch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DeepSeek Harness 时区切换插件：自定义时区列表、搜遍 Windows 全部时区、拖拽排序，一键改系统时区",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib"
+  ],
+  "dsh": {
+    "client": {
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "check": "node --check lib/index.js && node --check lib/client.js"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "~4.1.0"
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek-harness",
+    "timezone",
+    "windows"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Caffrey-Li/dsh-tz-switch.git"
+  },
+  "homepage": "https://github.com/Caffrey-Li/dsh-tz-switch#readme",
+  "bugs": {
+    "url": "https://github.com/Caffrey-Li/dsh-tz-switch/issues"
+  }
+}
